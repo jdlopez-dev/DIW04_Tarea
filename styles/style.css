@@ -1,0 +1,303 @@
+:root {
+  /* Uso de variables:
+  Definimos variables de color y de medidas para tener un mejor control de ellas y evitar repeticiones.
+  */
+
+  /* Colors */
+  --Dove_Gray: #666666;
+  --Night_Rider: #333333;
+  --Forest_Green: #3e9722;
+  --Fire_Bush: #e59c24;
+  --Royal_Blue: #3c74e6;
+  --Pear: #cae646;
+  --White: white;
+
+  /* medidas */
+  --header-width: 920px;
+  --footer-width: 960px;
+  --default-padding: 20px;
+  --max-width: 960px;
+  --max-height: 100vh;
+  --column-left-width: 220px; 
+  --column-middle: 480px;
+  --column-middle-padding-left: 20px;
+  --column-right-width: 180px;
+  --column-right-padding-left: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--White);
+  width: var(--max-width);
+  margin: 0 auto;
+  /*Usamos un display grid con 3 rows header, contenido, footer*/
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  /*Damos el 100% del viewport de altura*/
+  height: var(--max-height);
+  /*Color general para la fuente.*/
+  color: var(--Night_Rider);
+}
+
+/*Definimos estilos para selectores generales*/
+
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 1.5em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--Forest_Green);
+}
+
+/* Start Header */
+
+.header {
+  /* Definimos content-box para que el tamaño de la caja no se modifique si agregamos padding,margin,border...*/
+  box-sizing: content-box;
+  /* Color de fondo cabecera*/
+  background: linear-gradient(
+    to bottom,
+    var(--Forest_Green),
+    var(--Pear),
+    #ffffff
+  );
+  /* Tamaño de la caja*/
+  width: var(--header-width);
+  /* padding  border*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  /* border*/
+  border-radius: 15px;
+  border-color: var(--Forest_Green);
+  border-width: medium;
+  /* display: usamos flex para posicionar los elementos en la parte inferior de la caja*/
+  display: flex;
+  align-items: flex-end;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  color: var(--Night_Rider);
+  font-weight: bold;
+  background-color: #ffffff94;
+  margin: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+  /* Cuando pasamos sobre los elementos de navegación cambiaron de color*/
+.navigation a:hover {
+  background-color: var(--Fire_Bush);
+}
+
+.header p {
+  font-weight: bold;
+}
+
+/* End Header */
+
+/* Start columns */
+
+.wrapper {
+  border: medium none var(--Pear);
+  border-top-style: solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.column {
+  box-sizing: content-box;
+/* Definimos float para q se creen las columnas una al lado de otra hacia la izquierda.*/
+  float: left;
+  height: 100%;
+}
+
+.column.left {
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: var(--column-left-width);
+}
+
+.column.left form {
+  padding: 10px;
+}
+
+.forget_password a {
+  padding: 10px;
+  color: var(--Forest_Green);
+}
+
+/* Middle column */
+
+.column.middle {
+  width: var(--column-middle);
+  padding-left: var(--column-middle-padding-left);
+  margin-left: 20px;
+}
+
+.column.right {
+  width: var(--column-right-width);
+  padding-left: var(--column-right-padding-left);
+  margin-left: 20px;
+}
+
+/* Clear floats after the columns */
+
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Star footer */
+
+.footer {
+  text-align: center;
+  width: var(--footer-width);
+  box-sizing: border-box;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: medium none var(--Pear);
+  border-style: solid solid none;
+  font-size: small;
+  padding-top: 20px;
+}
+
+.footer > * {
+  display: inline;
+  color: var(--Night_Rider);
+}
+
+/* End Style the footer */
+
+/* styles contents */
+
+.header_content {
+  background-color: var(--Royal_Blue);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  height: 12px;
+  font-size: 0.8em;
+}
+
+.alignLeft {
+  float: left;
+}
+
+.alignRight {
+  float: right;
+}
+
+.header_content:after {
+  clear: both;
+}
+
+.content {
+  padding: 10px;
+  text-align: justify;
+}
+
+.content.with_picture img {
+  float: left;
+  margin-right: 10px;
+  width: 30%;
+}
+
+.content.realizado {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: dotted;
+  font-size: 0.6em;
+  font-weight: bold;
+  border-top-color: var(--Dove_Gray);
+}
+
+.content.realizado a,
+p {
+  display: inline;
+}
+
+.content.left li p {
+  font-weight: bold;
+}
+
+.content.left li a {
+  text-decoration: none;
+}
+
+.content.left li > * {
+  font-size: small;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.content.center ol {
+  padding-left: 20px;
+  list-style: decimal;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.column.right > * {
+  margin-right: 10px;
+}
+
+.content.right {
+  box-sizing: border-box;
+}
+
+.content.right img {
+  width: auto;
+  height: 550px;
+}
+
+.content.right ul {
+  list-style: disc;
+  padding-left: 10px;
+}
+
+.content.right ul > * {
+  padding-top: 5px;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+  text-align: justify;
+  font-size: medium;
+}

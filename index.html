@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div>
+        <h1>TodoFP</h1>
+        <p>www.educación.go.es</p>
+      </div>
+      <ul class="navigation">
+        <li>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Información</a>
+        </li>
+        <li>
+          <a href="">Cursos</a>
+        </li>
+        <li>
+          <a href="">Alumnos</a>
+        </li>
+        <li>
+          <a href="">Ayuda</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrapper">
+      <div class="column left">
+        <div class="header_content">
+          <p>AREA DE USUARIOS</p>
+        </div>
+
+        <form action="">
+          <label for="fname">ID de usuario:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Contraseña:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <input type="submit" value="Acceder" />
+        </form>
+
+        <div class="forget_password">
+          <a href="">Olvidaste la contraseñá?</a>
+        </div>
+
+        <div class="header_content">
+          <p>UNIDADES DE TRABAJO</p>
+        </div>
+
+        <ul class="content left">
+          <li>
+            <p>DIW01, 2011</p>
+            <a href="">Lorem ipsum, dolor sit amet consectetur...</a>
+          </li>
+          <li>
+            <p>DIW02, 2011</p>
+            <a href="">Lorem ipsum, dolor sit amet consectetur...</a>
+          </li>
+          <li>
+            <p>DIW03, 2011</p>
+            <a href="">Lorem ipsum, dolor sit amet consectetur...</a>
+          </li>
+          <li>
+            <p>DIW04, 2011</p>
+            <a href="">Lorem ipsum, dolor sit amet consectetur...</a>
+          </li>
+        </ul>
+      </div>
+      <div class="column middle">
+        <div class="header_content">
+          <p class="alignLeft">AREA DE USUARIOS</p>
+          <p id="fecha" class="alignRight"></p>
+        </div>
+        <div class="content with_picture">
+          <img src="./assets/fp.jpg" alt="logo fp" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            nobis? Deserunt cum consequuntur ut et quibusdam, delectus non
+            maxime provident voluptatum ipsum, corrupti unde qui facilis
+            veritatis fugiat, adipisci a! Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Fugiat in cum cumque magni quo.
+            Sapiente, voluptate explicabo inventore
+          </p>
+        </div>
+
+        <div class="content realizado">
+          <p>Realizado por Manuel Pepito</p>
+          <a href="">TODO FP</a>
+          |
+          <a href="">Educacion</a>
+        </div>
+
+        <div class="header_content" style="clear: both">
+          <p class="alignleft">AREA DE USUARIOS</p>
+          <p id="fecha_02" class="alignright"></p>
+        </div>
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          voluptates quisquam porro corrupti in nemo, doloribus distinctio
+          reiciendis facere blanditiis dicta nulla quae.
+        </blockquote>
+        <div class="content center">
+          <h6>Tecnicas y procedimientos realizados:</h6>
+          <ol>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ol>
+        </div>
+        <div class="content center">
+          <h6>Técnicas y procedimientos realizados:</h6>
+          <ol>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+            <li>Lorem ipsum dolor sit amet consectetur</li>
+          </ol>
+        </div>
+
+        <div class="content realizado">
+          <p>Realizado por Manuel Pepito</p>
+          <a href="">DIW</a>
+          |
+          <a href="">Educación</a>
+        </div>
+      </div>
+      <div class="column right">
+        <div class="header_content">
+          <p>WEBS DE INTERÉS</p>
+        </div>
+
+        <div class="content right">
+          <ul>
+            <li>
+              <a href="">TodoFP</a>
+            </li>
+            <li>
+              <a href="">FP online</a>
+            </li>
+            <li>
+              <a href="">Platega</a>
+            </li>
+            <li>
+              <a href="">IES San clemente</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="content right">
+          <img src="./assets/banner_right.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        &copy; Copyright <span id="year"></span> TodoFP. Todos los derechos
+        reservados.
+      </p>
+      <p>Diseño por</p>
+      <a href="">www.educacion.gob.es</a>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
