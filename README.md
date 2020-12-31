@@ -22,5 +22,6 @@ Visual code
 ***Juan Lopez
 
 ## Ejemplo ✒️
-    ![ejemplo](./DIW04_TAR_R01_Web.jpg)
+
+![ejemplo](./DIW04_TAR_R01_Web.jpg)
 
