@@ -18,7 +18,7 @@
   --default-padding: 20px;
   --max-width: 960px;
   --max-height: 100vh;
-  --column-left-width: 220px; 
+  --column-left-width: 220px;
   --column-middle: 480px;
   --column-middle-padding-left: 20px;
   --column-right-width: 180px;
@@ -108,7 +108,7 @@ a {
   border-top-right-radius: 5px;
 }
 
-  /* Cuando pasamos sobre los elementos de navegación cambiaron de color*/
+/* Cuando pasamos sobre los elementos de navegación cambiaron de color*/
 .navigation a:hover {
   background-color: var(--Fire_Bush);
 }
@@ -130,7 +130,7 @@ a {
 
 .column {
   box-sizing: content-box;
-/* Definimos float para q se creen las columnas una al lado de otra hacia la izquierda.*/
+  /* Definimos float para q se creen las columnas una al lado de otra hacia la izquierda.*/
   float: left;
   height: 100%;
 }
