@@ -19,5 +19,8 @@ Visual code
 
 ## Autores ✒️
 
-* **Juan Lopez
+***Juan Lopez
+
+## Ejemplo ✒️
+    ![ejemplo](./DIW04_TAR_R01_Web.jpg)
 
