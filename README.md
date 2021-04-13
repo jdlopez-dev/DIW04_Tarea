@@ -23,7 +23,7 @@ Visual code
 
 ## Autores ✒️
 
-***Juan Lopez
+*** Juan Lopez
 
 ## Ejemplo ✒️
 
